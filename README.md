@@ -108,24 +108,20 @@ Evaluation metrics used: Accuracy, F1 Score, Confusion Matrix, ROC Curve & AUC S
 ## How to Run
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/software-quality-ml.git
-cd software-quality-ml
+
+git clone https://github.com/mieverse/CSE422-PROJECT.git
+
+# (Optional) Create and activate a virtual environment
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
 
 # Install dependencies
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 
-# Launch the notebook
-jupyter notebook 422_project_Group2.ipynb
+# Launch Jupyter Notebook
+jupyter notebook CSE422Project_Group2.ipynb
+
 ```
-
----
-
-## Authors
-
-| Name | Student ID |
-|---|---|
-| Tasmiah Ahmed | 23201517 |
-| Anindita Mahjabin Sristy | 23201073 |
-
-> BRAC University, Department of Computer Science and Engineering
