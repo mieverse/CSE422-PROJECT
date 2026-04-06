@@ -1,6 +1,7 @@
 # Software Quality Analysis Using Machine Learning Models
 
-**CSE422: Artificial Intelligence** | BRAC University | Fall 2025  
+> **CSE422: Artificial Intelligence** | BRAC University | Fall 2025  
+> Section 11 | Group 02
 ---
 
 ## 👥 Group Members
@@ -16,7 +17,7 @@
 
 As software systems grow in size and complexity, manually evaluating code quality becomes increasingly costly and error-prone. This project explores an **automated, data-driven approach** to software quality classification using multiple machine learning techniques.
 
-We analyzed a dataset of software development metrics to classify code quality into three categories — **High**, **Medium**, and **Low** — and compared supervised and unsupervised learning approaches.
+We analyzed a dataset of software development metrics to classify code quality into three categories- **High**, **Medium**, and **Low** and compared supervised and unsupervised learning approaches.
 
 ---
 
