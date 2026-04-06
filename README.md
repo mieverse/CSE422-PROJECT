@@ -8,8 +8,9 @@
 
 | # | Name | Student ID |
 |---|------|------------|
-| 1 | Tasmiah Ahmed | 23201517 |
-| 2 | Anindita Mahjabin Sristy | 23201073 |
+
+| 1 | Anindita Mahjabin Sristy | 23201073 |
+| 2 | Tasmiah Ahmed | 23201517 |
 
 ---
 
