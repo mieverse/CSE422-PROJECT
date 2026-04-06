@@ -1,7 +1,15 @@
 # Software Quality Analysis Using Machine Learning Models
 
-> **CSE422: Artificial Intelligence** | BRAC University | Fall 2025  
-> Group Project — Tasmiah Ahmed & Anindita Mahjabin Sristy
+**CSE422: Artificial Intelligence** | BRAC University | Fall 2025  
+---
+
+## 👥 Group Members
+**Group 2 | Section 11**  
+
+| # | Name | Student ID |
+|---|------|------------|
+| 1 | Tasmiah Ahmed | 23201517 |
+| 2 | Anindita Mahjabin Sristy | 23201073 |
 
 ---
 
