@@ -4,11 +4,9 @@
 ---
 
 ## 👥 Group Members
-**Group 2 | Section 11**  
 
 | # | Name | Student ID |
 |---|------|------------|
-
 | 1 | Anindita Mahjabin Sristy | 23201073 |
 | 2 | Tasmiah Ahmed | 23201517 |
 
