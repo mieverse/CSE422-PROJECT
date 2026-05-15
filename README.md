@@ -19,8 +19,6 @@ As software systems grow in size and complexity, manually evaluating code qualit
 
 We analyzed a dataset of software development metrics to classify code quality into three categories- **High**, **Medium**, and **Low** and compared supervised and unsupervised learning approaches.
 
-**Project Report:** https://docs.google.com/document/d/1WvQ2j0TfRAjTFcPs7Wke8g6hrgZ-NuxKndkoa2wUqu8/edit?usp=sharing
-
 ---
 
 ## Dataset
