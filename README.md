@@ -19,10 +19,11 @@ As software systems grow in size and complexity, manually evaluating code qualit
 
 We analyzed a dataset of software development metrics to classify code quality into three categories- **High**, **Medium**, and **Low** and compared supervised and unsupervised learning approaches.
 
+**Project Report:** https://docs.google.com/document/d/1WvQ2j0TfRAjTFcPs7Wke8g6hrgZ-NuxKndkoa2wUqu8/edit?usp=sharing
+
 ---
 
 ## Dataset
-
 | Property | Details |
 |---|---|
 | Total Datapoints | 1,600 |
@@ -30,45 +31,23 @@ We analyzed a dataset of software development metrics to classify code quality i
 | Target Variable | `Quality_Label` (High / Medium / Low) |
 | Class Distribution | Balanced |
 
-**Features include:**
-- `Lines_of_Code`, `Cyclomatic_Complexity`, `Number_of_Functions`
-- `Code_Churn`, `Comment_Density`, `Number_of_Bugs`
-- `Has_Unit_Tests` *(binary: Yes/No)*
-- `Code_Owner_Experience`
-
 ---
 
 ## Methodology
 
-### 1. Exploratory Data Analysis (EDA)
-- Visualized class distribution via bar plots and density plots
-- Plotted correlation heatmap across numerical features
-- Confirmed dataset is balanced and approximately normally distributed
+- **EDA:** Correlation heatmap, density plots, class distribution analysis
+- **Preprocessing:** Null removal, label encoding, MinMaxScaler normalization
+- **Supervised:** KNN, Gaussian Naive Bayes, Neural Network (MLP)
+- **Unsupervised:** K-Means Clustering (Elbow Method for optimal K)
 
-### 2. Data Preprocessing
-- Train/Test split: **1,120 / 480** datapoints
-- Handled null values in `Lines_of_Code`, `Code_Churn`, `Comment_Density` by dropping incomplete rows
-- Encoded categorical features via label mapping
-- Applied **MinMaxScaler** for feature normalization
-- No features dropped after correlation analysis (no high multicollinearity detected)
-
-### 3. Model Training & Evaluation
-
-#### Supervised Learning
-Three classifiers were trained and evaluated:
-
-| Model | Accuracy | Notes |
+## Results
+| Model | Accuracy | F1 Score |
 |---|---|---|
-| K-Nearest Neighbors (KNN) | 0.32 | Highest F1 Score |
-| Gaussian Naive Bayes | 0.32 | Assumes feature independence |
-| Neural Network (MLP) | **0.34** | Best overall accuracy |
+| KNN | 0.32 | Highest |
+| Gaussian Naive Bayes | 0.32 | Moderate |
+| Neural Network | **0.34** | High |
 
 Evaluation metrics used: Accuracy, F1 Score, Confusion Matrix, ROC Curve & AUC Score
-
-#### Unsupervised Learning
-- Applied **K-Means Clustering** to explore natural groupings in the data
-- Used the **Elbow Method** (SSE vs. K) to determine optimal cluster count
-- Visualized clusters with centroids across two key features
 
 ---
 
@@ -76,7 +55,7 @@ Evaluation metrics used: Accuracy, F1 Score, Confusion Matrix, ROC Curve & AUC S
 
 - **Neural Network (MLP)** achieved the highest accuracy, benefiting from its multi-layer architecture with ReLU and Softmax activations
 - **KNN** achieved the best F1 score, performing well due to the smaller dataset size
-- **Naive Bayes** performed moderately — the feature independence assumption limited its effectiveness on this dataset
+- **Naive Bayes** performed moderately. The feature independence assumption limited its effectiveness on this dataset
 - K-Means clustering revealed meaningful natural groupings independent of labels
 
 ---
@@ -91,38 +70,3 @@ Evaluation metrics used: Accuracy, F1 Score, Confusion Matrix, ROC Curve & AUC S
 - **Language:** Python
 - **Notebook:** Jupyter Notebook
 - **Libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn
-
----
-
-## Repository Structure
-
-```
-📦 software-quality-ml
- ┣ 📓 422_project_Group2.ipynb   # Main notebook (EDA + Models + Evaluation)
- ┣ 📊 dataset/                   # Dataset files
- ┣ 📄 report.pdf                 # Full project report
- ┗ 📄 README.md
-```
-
----
-
-## How to Run
-
-```bash
-
-git clone https://github.com/mieverse/CSE422-PROJECT.git
-
-# (Optional) Create and activate a virtual environment
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
-
-# Install dependencies
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter
-
-# Launch Jupyter Notebook
-jupyter notebook CSE422Project_Group2.ipynb
-
-```
